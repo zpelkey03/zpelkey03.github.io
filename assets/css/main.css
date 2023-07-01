@@ -88,7 +88,7 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 400;
 		line-height: 1.75em;
-		color: rgb(85, 85, 85);
+		color: rgb(255, 255, 255);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -112,7 +112,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 500;
-		color: rgb(6, 166, 76);
+		color: rgb(255, 255, 255);
 		line-height: 1.5em;
 	}
 
@@ -122,7 +122,7 @@ input, select, textarea {
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: rgb(80, 252, 152);
+			color: rgb(255, 255, 255);
 		}
 
 	h2 {
@@ -173,6 +173,8 @@ input, select, textarea {
 		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		outline: 0;
 	}
+
+	
 
 		a:hover {
 			color: #121111;
@@ -1977,9 +1979,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #474646 url("images/overlay.png");
+		background: #191919 ;
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-		color: rgb(8, 246, 0);
+		color: rgb(88, 202, 84);
 		height: 100%;
 		left: 0;
 		overflow-y: auto;
@@ -2022,19 +2024,19 @@ input, select, textarea {
 			}
 
 				#header .icons a:hover {
-					color: rgb(0, 240, 104);
+					color: #FFC107;
 				}
 
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
-		min-height: 48px;
+		min-height: 38px;
 		cursor: default;
 	}
 
 		#logo h1 {
 			position: relative;
-			color: rgb(68, 215, 107);
+			color: #ffffff;
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
@@ -2044,7 +2046,7 @@ input, select, textarea {
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(137, 220, 159);
+			color: #ffffff;
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2068,7 +2070,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(137, 220, 159);
+				color: #9E9E9E;
 				outline: 0;
 				border: 0;
 				-moz-transition: none;
@@ -2086,7 +2088,7 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #ffffff;
+						color: #9E9E9E;
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
@@ -2095,19 +2097,34 @@ input, select, textarea {
 				#nav ul li a.active {
 					background: rgba(0, 0, 0, 0.15);
 					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
-					color: #fff;
+					color: #FFC107;
 				}
 
 					#nav ul li a.active span:before {
-						color: #f7f7f7;
+						color: #FFC107;
 					}
 
+/*Skill Bars*/
+.skill-bar {
+	width: 100%;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+	height: 20px;
+	margin-bottom: 8px;
+  }
+  
+  .skill-bar-fill {
+	background-color: #FFC107	;
+	height: 100%;
+	border-radius: 4px;
+	transition: width 0.5s ease;
+  }
 /* Footer */
 
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #ccc9c9;
+		background-color: #000000;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(183, 8, 8, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2144,25 +2161,30 @@ input, select, textarea {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(155, 12, 12, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+			
 		}
 
+		/*text colour*/
 			#main > section.dark {
-				color: rgb(221, 221, 221);
-				color: rgba(85, 85, 85);
+				color: rgb(255, 255, 255);
+				color: #ffffff
 			}
 
-				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
+				#main > section.dark h2, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
+				}
+				
+				#main > section.dark p {
+					color: #ffffff;
 				}
 
 				#main > section.dark strong {
-					color: rgb(6, 166, 76);
+					color: #FFC107;
 					border-color: inherit;
 				}
 
 				#main > section.dark a {
-					color: #fff;
+					color: #FFC107;
 					border-color: inherit;
 				}
 
@@ -2177,20 +2199,19 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #ccc9c9;
-				background-image: url("../../images/banner.jpg");
+				background-color: #000000;
 			}
 
 			#main > section.two {
-				background-color: #ccc9c9;
+				background-color: #000000;
 			}
 
 			#main > section.three {
-				background-color: #ccc9c9;
+				background-color: #000000;
 			}
 
 			#main > section.four {
-				background-color: #ccc9c9;
+				background-color: #000000;
 			}
 
 /* Wide */
